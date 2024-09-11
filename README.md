@@ -1,2 +1,3 @@
 # MADONNA_COOKIES_STRE
-readme
+Stor to shope cookies
+
