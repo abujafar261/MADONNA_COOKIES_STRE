@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #b98a8ab0;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    border-radius: 10px;
+    border-bottom: 3px solid rgb(245, 186, 23);
+    margin-left: 0;
+}
+#card_logo{
+    width: 50px;
+    height: 50px;
+    padding: 6px;
+    background-color: #fa6981;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.info-card{
+    padding: 200px 10px;
+}
+.card-title{
+    color: #02355f;
+    font-size: 40px;
+}
+.card-text{
+    color: #0151ad;
+    font-size: 20px;
+}
+.text .content{
+    position: absolute;
+    top: 35%;
+    width: 45%;
+    height: 200px;
+    padding: 50px 20px;
+    background-color: rgb(15 116 143 /70%);
+    color: white;
+
+}
+@media(max-width: 500px) {
+    .info-card{
+        padding: 100px 10px;
+    }
+    .card-title{
+        font-size: 30px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+    #mark{
+        margin: 50px;
+    }
+}
+.heas{
+    background-color: #fffefebd;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    top: 100%;
+    border-bottom: 4px solid rgba(18, 54, 95, 0.589);
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    height: 80px;
+}
+.logo{
+    font-size: 30px;
+    color: rgb(121, 54, 54);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    transform: scale(1.05);
+}
+.logo span{
+    color: #02355f;
+    text-shadow:  0 0 25px rgb(15 116 143 /70%);
+}
+nav a{
+    font-size: 1.8rem;
+    color: #008cff;
+    margin-left: 2rem;
+}
+
+@keyframes lin{
+    from{
+        width: 0;
+        height: 0;
+    }
+    to{
+        padding: 10px;
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(18, 54, 95);
+    }
+}
+.container img{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 5px;
+}
+footer{
+    background-color: #333333;
+}
+footer .copy{
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+.container .card{
+    margin-bottom: 20px;
+}
+.cart_page{
+    background-color: white;
+    width: 100%;
+    min-height: 200px;
+}
+.cart_page p{
+    width: 200px;
+    margin: 10px auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: #f30891d0;
+}
+.cart_page table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 30px;
+}
+.cart_page table th{
+    text-transform: capitalize;
+}
+.cart_page th, td{
+    padding: 5px;
+    background: #ffffff;
+}
+.cart_page #delete{
+    color: #348bfc;
+    width: 70px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.cart_page #delete:focus{
+    outline: none;
+}

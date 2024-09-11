@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="Style/all.css">
+      <link rel="stylesheet" href="Style/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="Style/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+      <title>Madonna Cookies Store</title>
+      <!-- <command>متجر لبيع الكوكيز فقط يحتوي على انواع عدة من الكوكيز المختلفة -->
+  </head>
+  <body>
+
+      <nav class="navbar navbar-expand-lg heas">
+        <a href="#home" class="logo navbar-brand">Madonna <span>Cookies</span></a>
+
+        <a href="#cart"  id="card_logo"><i class="fa fa-cart-shopping" s></i></a>
+      
+        <div class="collapse navbar-collapse" id="show">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home" class="action">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"href="#mark">أنواع الكوكيز</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"href="#comm">تواصل مع المتجر</a>
+            </li>
+          </u>
+        </div>
+    </nav>
+
+      <div class="card text-bg-dark" id="home">
+        <img src="image/pepe.jpg" class="card-img" alt="...">
+        <div class="card-img-overlay info-card">
+          <h5 class="card-title">Madonna Cookies</h5>
+          <p class="card-text">Welcom in Madonna Cookies Story</p>
+          <p class="card-text">This store offers many types of cookies</p>
+        </div>
+      </div>
+
+      <div class="container" id="mark">
+          <div class="text-center m-5">
+              <h3 style="color: white; font-weight: bold;">المنتجات</h3>
+          </div>
+          <div class="row">
+              <div class="col-lg-4 p-1 col-md-6 col-12">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="image/kandy.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">كاندي كوكيز</h5>
+                        <a href="page/kandy/kandy.html" class="btn btn-outline-danger">عرض الكوكي</a>
+                        <input type="submit" value="شراء" class="btn btn-outline-primary" onclick="Bying('كاندي كوكيز' ,kandy)"></input>
+                        <input type="number" id="kandy_quantity" required min="0" class="form-control mt-2" placeholder="أدخل كمية الكوكي التي تريد شرائها">
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 p-1 col-md-6 col-12">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="image/felt.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">ريد فيلفت كوكيز</h5>
+                        <a href="page/felt/felt.html" class="btn btn-outline-danger">عرض الكوكي</a>
+                        <button class="btn btn-outline-primary" onclick="Bying('ريد فيلفت كوكيز' ,felt)">شراء</button>
+                        <input type="number" id="felt_quantity" required min="0" class="form-control mt-2" placeholder="أدخل كمية الكوكي التي تريد شرائها">
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 p-1 col-md-6 col-12">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="image/mons.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">مونستر كوكيز</h5>
+                        <a href="page/monster/monster.html" class="btn btn-outline-danger">عرض الكوكي</a>
+                        <button class="btn btn-outline-primary" onclick="Bying('مونستر كوكيز' ,monster)">شراء</button>
+                        <input type="number" id="monster_quantity" required min="0" class="form-control mt-2" placeholder="أدخل كمية الكوكي التي تريد شرائها">
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 p-1 col-md-6 col-12">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="image/bstaf.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">بستاشيو كوكيز</h5>
+                        <a href="page/bsti/bsti.html" class="btn btn-outline-danger">عرض الكوكي</a>
+                        <button class="btn btn-outline-primary" onclick="Bying('بستاشيو كوكيز' ,bsti)">شراء</button>
+                        <input type="number" id="bsti_quantity" required min="0" class="form-control mt-2" placeholder="أدخل كمية الكوكي التي تريد شرائها">
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 p-1 col-md-6 col-12">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="image/klasik.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">شوكولا كوكيز</h5>
+                        <a href="page/choklet/choklet.html" class="btn btn-outline-danger">عرض الكوكي</a>
+                        <button class="btn btn-outline-primary" onclick="Bying('شوكولا كوكيز' ,choklet)">شراء</button>
+                        <input type="number" id="choklet_quantity" required min="0" class="form-control mt-2" placeholder="أدخل كمية الكوكي التي تريد شرائها">
+                      </div>
+                    </div>
+              </div>
+              <div class="col-lg-4 p-1 col-md-6 col-12">
+                  <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="image/bstaf.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">بستاشيو كوكيز</h5>
+                        <a href="page/bsti/bsti.html" class="btn btn-outline-danger">عرض الكوكي</a>
+                        <button class="btn btn-outline-primary" onclick="Bying('بستاشيو كوكيز' ,bsti)">شراء</button>
+                        <input type="number" id="bsti_quantity" required min="0" class="form-control mt-2" placeholder="أدخل كمية الكوكي التي تريد شرائها">
+                      </div>
+                    </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="cart_page" id="cart">
+        <p>سلة المنتجات</p>
+
+        <table>
+
+          <tbody id="tbody">
+              
+          </tbody>
+        </table>
+
+      </div>
+      
+      <footer class="text-center" id="comm">
+          <!-- Grid container -->
+          <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <!-- Github -->
+              <a
+                data-mdb-ripple-init
+                class="btn btn-link btn-floating btn-lg text-body m-1"
+                href="#!"
+                role="button"
+                data-mdb-ripple-color="dark"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3 copy">
+            © 2024 Copyright:
+            <a class="text-body" href="https://github.com/abujafar261">Abu-sadiq</a>
+          </div>
+          <!-- Copyright -->
+      </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
